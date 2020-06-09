@@ -1,0 +1,18 @@
+jar {
+    manifest {
+        attributes "Main-Class": "org.cft.ServerChatApp"
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+dependencies {
+    compile project(':chat:common')
+
+    compile 'org.jetbrains:annotations:16.0.2'
+
+    compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.4'
+    compile group: 'org.apache.commons', name: 'commons-configuration2', version: '2.7'
+}

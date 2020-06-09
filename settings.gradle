@@ -1,0 +1,8 @@
+rootProject.name = 'from_cft'
+include 'minesweeper'
+include 'chat'
+include 'chat:client'
+include 'chat:server'
+include 'chat:common'
+include 'rest'
+

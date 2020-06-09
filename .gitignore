@@ -1,0 +1,27 @@
+# Compiled class file
+*.class
+
+# Log folders
+**/logs/
+
+# Log file
+*.log
+*.txt
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# JetBrains
+.idea/
+
+# Gradle
+.gradle/
+**/build/
+
+**/out/
